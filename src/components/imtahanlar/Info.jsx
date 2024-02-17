@@ -1,4 +1,4 @@
-import React from 'react'
+  import React from 'react'
 
 import backImg from "../../assets/images/home-info/main.svg"
 

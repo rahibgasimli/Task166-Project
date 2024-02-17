@@ -14,14 +14,13 @@ body{
 /* NAVBAR SECTION START */
 
 .navbar-section{
-  background-color: aqua;
   display: flex;
   justify-content: space-around;
   align-items: center;
   padding-top: 20px;
   padding-bottom: 20px;
-  padding-left: 60px;
-  padding-right: 60px;
+  padding-left: 40px;
+  padding-right: 30px;
 }
 
 
@@ -77,12 +76,48 @@ body{
   line-height: 24px;
 }
 
+@media(min-width:769px){
+  .navbar-bars{
+    display: none;
+  }
+}
+
+
+
+@media(max-width:576px){
+  
+  .navbar-section{
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding-right: 0;
+  }
+  
+  .navbar-buttons{
+    display: none;
+  }
+  
+  .navbar-nav {
+    display: none;
+  }
+
+  .navbar-bars{
+    font-size: 22px;
+    padding-right: 40px;
+    cursor: pointer;
+  }
+
+}
+
+
+/* @media(max-width:576px) */
+
 /* NAVBAR SECTION END */
 
 /* HOME INFO START */
 .home-info{
   position: relative;
-  
+  display: flex;
 }
 
 .home-info .back-img{
@@ -97,7 +132,7 @@ body{
 .info-text{
   position: absolute;
   color: white;
-  margin-left: 100px;
+  margin-left: 140px;
 }
 
 .info-text h1{
@@ -115,18 +150,698 @@ body{
 }
 
 
+@media(max-width:576px){
+  
+  .info-text{
+    margin-left: 40px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-right: 50px;
+  }
+  
+  .info-text h1{
+    padding: 0;
+    font-size: 20px;
+    line-height: 15px;
+    padding-bottom: 10px;
+    margin-top: 20px;
+  }
+
+  .info-text p{
+    font-size: 10px;
+    line-height: 10px;
+  }
+
+
+}
+
 
 /* HOME INFO END */
 
 /* CATEGORY SECTION START */
 
+.category-section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 100px;
+}
 
+.category-section h6{
+  padding-top: 90px;
+  padding-bottom: 20px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.category-section h1{
+  padding-bottom: 30px;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 54px;
+}
+
+
+.category-boxes{
+  display: flex;
+  flex-direction: column;
+}
+
+.category-boxes-top{
+  padding-bottom: 15px;
+}
+
+.category-boxes-top button{
+  width: 160px;
+  height: 100px;
+  border-radius: 12px;
+  border: none;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  margin-right: 15px;
+  background-color: #FAFAFA;
+  transition-duration: 0.8s;
+}
+
+.category-boxes-top button:hover{
+  background-color: black;
+  color: #FAFAFA;
+}
+
+
+
+.category-boxes-bottom button{
+  width: 160px;
+  height: 100px;
+  border-radius: 12px;
+  border: none;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  margin-right: 15px;
+  background-color: #FAFAFA;
+  transition-duration: 0.8s;
+}
+
+
+.category-boxes-bottom button:hover{
+  background: black;
+  color: #FAFAFA;
+}
+
+
+
+@media(max-width:576px){
+  .category-section h6{
+    padding-top: 50px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .category-boxes{
+    margin-left: 25px;
+  }
+
+  .daha-cox-btn{
+    display: none;
+  }
+
+}
 
 
 /* CATEGORY SECTION END */
 
+/* EXAMS SECTION START */
+
+.exams-section{
+  display: flex;
+  flex-direction: column;
+  padding-top: 40px;
+  padding-bottom: 120px;
+}
+
+.exams-section-text{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.exams-section-text h6{
+  font-weight: 500;
+  font-size: 16px;
+  padding-bottom: 20px;
+}
+
+.exams-section-text h1{
+  font-weight: 700;
+  font-size: 36px;
+  padding-bottom: 48px;
+}
+
+.exams-section-main{
+  display: flex;
+  justify-content: center;
+}
+
+.exams-section-right{
+  display: flex;
+  margin-left: 68px;
+}
 
 
+
+.exams-card{
+  display: flex;
+  flex-direction: column;
+  background-color: #FAFAFA;
+  width: 373px;
+  /* height: 394px; */
+  border-radius: 12px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+
+.exams-card-top{
+  display: flex;
+  flex-direction: column;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-top: 30px;
+  border-bottom: 1px solid #D9D9D9;
+}
+
+.exams-card-top h3{
+  font-weight: 700;
+  font-size: 20px
+}
+
+.exams-card-top .card-reyting{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 28px;
+  align-items: center;
+}
+
+.exams-card-top .card-reyting span{
+  display: flex;
+}
+
+.card-time-icon{
+  padding-right: 5px;
+}
+
+.card-stars-icon{
+  padding-right: 10px;
+}
+
+.exams-card-top .card-suallar{
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.exams-card-top .card-suallar h5{
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  padding-bottom: 12px;
+  color: black;
+}
+
+.exams-card-top .card-suallar span{
+  display: flex;
+  padding-bottom: 10px;
+  font-weight: 400;
+  font-size: 14px;
+  text-align: left;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.exams-card-bottom{
+  margin-left: 30px;
+  padding-top: 20px;
+  margin-right: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.exams-card-filter span{
+  margin-right: 12px;
+  background-color: red;
+  padding: 4px 16px 4px 16px;
+  border-radius: 12px;
+  background-color: #D9D9D9;
+  color: black;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+
+.exams-card-bottom button{
+  align-items: center;
+  margin-top: 28px;
+  margin-bottom: 28px;
+  border-radius: 12px;
+  font-weight: 500;
+  font-size: 16px;
+  padding: 10px 0px;
+  border: 1px solid black;
+  background-color: #FAFAFA;
+  transition-duration: 0.5s;
+}
+
+.exams-card-bottom button a {
+  text-decoration: none;
+  color: black;
+}
+
+
+
+
+.exams-filter{
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  background-color: #FAFAFA;
+  border-radius: 15px;
+}
+
+.exams-filter h5{
+  margin-left: 28px;
+  margin-top: 28px;
+  margin-bottom: 28px;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.filter-category{
+  display: flex;
+  flex-direction: column;
+  margin-right: 28px;
+  margin-left: 28px;
+}
+
+.filter-category h6{
+  font-weight: 400;
+  font-size: 14px;
+  margin-bottom: 20px;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.filter-category button{
+  text-align: left;
+  margin-bottom: 12px;
+  padding: 10px 15px;
+  border-radius: 15px;
+  border: none;
+  font-weight: 500;
+  font-size: 16px;
+  background-color: #F5F5F5;
+}
+
+.filter-etiket{
+  display: flex;
+  flex-direction: column;
+  margin-right: 28px;
+  margin-left: 28px;
+  padding-bottom: 28px;
+}
+
+.filter-etiket h6{
+  margin-top: 40px;
+  margin-bottom: 20px;
+  color: rgba(0, 0, 0, 0.6);
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.filter-etiket button{
+  text-align: left;
+  margin-bottom: 12px;
+  padding: 10px 15px;
+  border-radius: 15px;
+  border: none;
+  font-weight: 500;
+  font-size: 16px;
+  background-color: #F5F5F5;
+}
+
+
+
+.exams-filter .btn-qara{
+  background-color: black;
+  color: #F5F5F5;
+}
+
+
+.daha-cox-btn{
+  padding: 10px 20px 10px 20px;
+  border-radius: 12px;
+  border: 1px solid #D9D9D9;
+  font-weight: 500;
+  background: white;
+  font-size: 16px;
+  margin-left: -70px;
+  margin-top: 40px;
+}
+
+.exams-section-main{
+  display: flex;
+  flex-direction: column;
+}
+
+.exams-section-text h6{
+  padding-top: 0px;
+}
+
+.exams-section-left{
+  margin-left: 20px;
+}
+
+
+.exams-section-right{
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  margin-left: 10px;
+}
+
+/* EXAMS SECTION END */
+
+/* IMTAHAN INFO SECTION START */
+
+.imtahan-info-background{
+  display: flex;
+  position: relative;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.imtahan-info-img{
+  width: 100%;
+}
+
+.imtahan-info-img img{
+  position: relative;
+}
+
+.imtahan-info-text{
+  position: absolute;
+  margin-left: 60px;
+  bottom: 72px;
+}
+
+.imtahan-info-text button{
+  border-radius: 12px;
+  background: rgb(255, 255, 255);
+  padding: 10px 20px 10px 20px;
+  font-size: 16px;
+  font-weight: 500;
+  border: none;
+  transition-duration: 0.5s;
+}
+
+.imtahan-info-text button:hover{
+  background-color: black;
+  color: white;
+  border: 1px solid white;
+}
+
+
+@media(max-width:576px){
+  .imtahan-info-background{
+    padding: 0;
+
+  }
+
+  .imtahan-info-img img{
+    width: 100%;
+  }
+
+  .imtahan-info-text button{
+    padding: 5px;
+    margin: 0;
+    font-size: 12px;
+  }
+
+  .imtahan-info-text{
+    margin-left: 15px;
+    bottom: 20px;;
+  }
+
+
+}
+
+.imtahan-melumat-card{
+  background-color: #FAFAFA;
+  width: 648px;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 120px;
+  border-radius: 15px;
+  box-shadow: 4px 4px 8px 4px rgba(0, 0, 0, 0.05);
+  margin-right: 20px;
+}
+
+
+.imtahan-melumat-card h4{
+  font-size: 20px;
+  font-weight: 700;
+  padding-top: 28px;
+  padding-left: 28px;
+}
+
+.melumat-info span{
+  font-size: 16px;
+  font-weight: 500;
+  padding-right: 48px;
+  text-align: center;
+  align-items: center;
+}
+
+.melumat-info{
+  padding-top: 28px;
+  padding-bottom: 38px;
+  padding-left: 28px;
+}
+
+.imtahan-melumat-card h3{
+  font-size: 20px;
+  font-weight: 700;
+  padding-left: 28px;
+  padding-bottom: 20px;
+}
+
+.imtahan-melumat-card h6{
+  padding-left: 28px;
+  padding-bottom: 5px;
+  display: flex;
+  font-size: 16px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+
+.imtahan-netice-card{
+  background-color: #FAFAFA;
+  width: 492px;
+  border-radius: 15px;
+  box-shadow: 4px 4px 8px 4px rgba(0, 0, 0, 0.05);
+}
+
+.imtahan-netice-card h1{
+  padding-left: 28px;
+  padding-top: 28px;
+  padding-bottom: 20px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.imtahan-neticeler{
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+}
+
+.imtahan-netice{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+.imtahan-netice span{
+  display: flex;
+  align-items: center;
+  margin-right: 28px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.imtahan-netice-time a {
+  text-decoration: none;
+  color: black;
+  padding-left:10px;
+  font-size: 16px;
+}
+
+.tutulanYer{
+  padding-right: 5px;
+}
+
+.imtahan-reyler-card{
+  background-color: #FAFAFA;
+  width: 1160px;
+  display: flex;
+  margin-left: 120px;
+  border-radius: 15px;
+  box-shadow: 4px 4px 8px 4px rgba(0, 0, 0, 0.05);
+}
+
+.reyler-card-left{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-right: 100px;
+}
+
+
+.reyler-card-left h2{
+  font-size: 64px;
+  font-weight: 500;
+  padding-left: 60px;
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+
+.reyler-card-left span{
+  padding-left: 60px;
+  display: flex;
+}
+
+.reyler-card-right{
+  padding-top: 40px;
+  padding-bottom: 45px;
+}
+
+.imtahan-reyler h1{
+  display: flex;
+  justify-content: center;
+  font-size: 36px;
+  font-weight: 700;
+  padding-top: 100px;
+  padding-bottom: 48px;
+}
+
+.comment-card{
+  display: flex;
+  flex-direction: column;
+  width: 373px;
+  border-radius: 15px;
+  background: rgb(250, 250, 250);
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.comment-card h3{
+  font-size: 16px;
+  font-weight: 600;
+  padding-left: 20px;
+  padding-top: 20px;
+  padding-bottom: 16px
+}
+
+.comment-card span{
+  padding-left: 20px;
+  padding-bottom: 20px;
+  font-size: 14px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+}
+
+.comment-card p{
+  padding-left: 20px;
+  text-align: left;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 14px;
+  font-weight: 400;
+  padding-bottom: 20px;
+}
+
+.comments-list{
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 120px;
+  padding-top: 60px;
+  padding-bottom: 80px;
+}
+
+.imtahan-melumat-section{
+  display: flex;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 120px;
+}
+
+
+
+.daha-cox-page{
+  margin-top: 60px;
+  margin-bottom: 120px;
+  padding: 10px 20px 10px 20px;
+  color: black;
+  border: 1px solid #D9D9D9;
+  background-color: white;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+
+@media(max-width:576px){
+  .imtahan-melumat-section{
+    flex-direction: column;
+    justify-content: center;
+    padding: 0;
+    padding-top: 30px;
+    padding-left: 10px;
+  }
+
+  .imtahan-melumat-section span{
+    font-size: 14px;
+  }
+
+  .imtahan-melumat-card{
+    width: 380px;
+  }
+
+  .imtahan-netice-card{
+    width: 380px;
+  }
+
+
+  .imtahan-reyler-card{
+    display: none;
+  }
+
+  .comments-list{
+    padding: 0;
+    margin: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+}
+
+
+
+/* IMTAHAN INFO SECTION END */
 
 
 
@@ -139,11 +854,11 @@ body{
 .footer-top{
   display: flex;
   justify-content: space-between;
-  margin-left: 120px;
-  margin-right: 120px;
+  margin-left: 140px;
+  margin-right: 140px;
   padding-bottom: 15px;
   border-bottom: 1px solid #D9D9D9;
-  padding-top: 30px;
+  padding-top: 40px;
 }
 
 .footer-top-left .footer-logo{
@@ -211,7 +926,7 @@ body{
 
 
 .footer-bottom{
-  margin-left: 120px;
+  margin-left: 140px;
   margin-top: 15px;
   padding-bottom: 15px;
   font-weight: 400;
@@ -219,5 +934,51 @@ body{
   line-height: 20px;
   color: rgba(0, 0, 0, 0.8);
 }
+
+@media(max-width:576px){
+  .footer-section{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .footer-top{
+    flex-direction: column;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .footer-logo{
+    margin-left: 50px
+  }
+
+  .footer-top-left{
+    padding-bottom: 10px;
+  }
+
+  .footer-links{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-links a{
+    padding-bottom: 15px;
+  }
+
+  .footer-top-right .social-medias{
+    padding-top: 50px;
+  }
+
+  .footer-bottom{
+    margin: 0;
+    align-items: center;
+    text-align: center;
+    padding-top: 10px;
+  }
+
+}
+
+
 
 /* FOOTER SECTION  END */
