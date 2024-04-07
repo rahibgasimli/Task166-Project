@@ -7,8 +7,8 @@ const Imtahanlar = () => {
   return (
     <>
         <Info/>
-        <Category/>
-        <Exams/>
+          <Category/>
+          <Exams/>
     </>
   )
 }

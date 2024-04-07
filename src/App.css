@@ -149,7 +149,6 @@ body{
   line-height: 24px;
 }
 
-
 @media(max-width:576px){
   
   .info-text{
@@ -301,10 +300,7 @@ body{
   padding-bottom: 48px;
 }
 
-.exams-section-main{
-  display: flex;
-  justify-content: center;
-}
+
 
 .exams-section-right{
   display: flex;
@@ -511,7 +507,8 @@ body{
 
 .exams-section-main{
   display: flex;
-  flex-direction: column;
+  margin-left: 80px;
+  
 }
 
 .exams-section-text h6{
@@ -525,7 +522,7 @@ body{
 
 .exams-section-right{
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
   margin: 0;
   margin-left: 10px;
 }
@@ -835,6 +832,14 @@ body{
     margin: 0;
     padding-left: 10px;
     padding-right: 10px;
+  }
+
+  .exams-section-main{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+
+    justify-content: center;
   }
 
 }
